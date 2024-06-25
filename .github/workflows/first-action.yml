@@ -1,0 +1,10 @@
+name: First Workflow
+on: workflow_dispatch #this is manual event
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print greetings
+        run: echo "Hello, World!" # run is reserved keyowrd to print on cli
+      - name: print goodbye
+        run: echo "done-bye!"
